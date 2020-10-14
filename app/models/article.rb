@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  id         :integer          not null, primary key
+#  content    :text
+#  title      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Article < ApplicationRecord
   # コロンの位置を間違えない！！
   validates :title, presence: true
